@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome!</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-image: url("https://images.unsplash.com/photo-1625442772842-329d4f08ea14?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+        background-size: cover;
+        backdrop-filter: blur(5px);
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      h1 {
+        font-size: 3em;
+        margin-bottom: 15px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      }
+      p {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+      }
+      form {
+        display: inline-block;
+        margin: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
+      button {
+        background-color: transparent;
+        color: white;
+        padding: 5px 10px;
+        border: none;
+        border-radius: 1px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to our exciting world!</h1>
+    <p>Join us on an adventure. Choose your path:</p>
+    <form action="/login" method="GET">
+      <button type="submit">Continue Your Journey</button>
+    </form>
+    <form action="/register" method="GET">
+      <button type="submit">New User? Forge Your Legend</button>
+    </form>
+  </body>
+</html>
