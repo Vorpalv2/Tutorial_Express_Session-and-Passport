@@ -9,8 +9,7 @@ mainRoutes.get(`/`, (req, res) => {
   res.render("homepage");
 });
 
-mainRoutes.get(`/login`, (req, res) => {
-  console.log(req.isAuthenticated());
+mainRoutes.get(`/login`, checkForAuth, (req, res) => {
   res.render("login");
 });
 

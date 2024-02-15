@@ -1,7 +1,9 @@
 function checkForAuth(req, res, next) {
   if (!req.isAuthenticated()) {
-    res.redirect(`/`);
+    console.log("not authorized");
+    next();
   } else {
+    console.log("authorized");
     next();
   }
 }
